@@ -4,7 +4,7 @@
   "description": "Testing node, express, SQL api.",
   "main": "server.js",
   "dependencies": {
-    
+    "express": "^4.14.0",
     "body-parser": "^1.15.2",
     "mssql": "^ 3.3.0"
   },
