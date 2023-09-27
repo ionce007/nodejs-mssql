@@ -25,10 +25,10 @@ app.use(function (req, res, next) {
 //Initialising connection string
 //Server=qds169535493.my3w.com;Uid=qds169535493;Pwd=Hwang113@doinnx;Database=qds169535493_db;
 var dbConfig = {
-    user:  process.env.USER || "qds169535493",
-    password: process.env.PASSWORD || "Hwang113@doinnx",
-    server: process.env.SERVER || "qds169535493.my3w.com",
-    database: process.env.DATABASE ||"qds169535493_db"
+    user:  "qds169535493",
+    password:  "Hwang113@doinnx",
+    server:  "qds169535493.my3w.com",
+    database: "qds169535493_db"
 };
  
 //Function to connect to database and execute query
