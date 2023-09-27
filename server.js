@@ -23,11 +23,12 @@ app.use(function (req, res, next) {
  });
 
 //Initialising connection string
+//Server=qds169535493.my3w.com;Uid=qds169535493;Pwd=Hwang113@doinnx;Database=qds169535493_db;
 var dbConfig = {
-    user:  "testuser",
-    password: "password",
-    server: "localhost",
-    database: "LMS"
+    user:  "qds169535493",
+    password: "Hwang113@doinnx",
+    server: "qds169535493.my3w.com",
+    database: "qds169535493_db"
 };
 
 //Function to connect to database and execute query
@@ -57,7 +58,7 @@ var executeQuery = function(req, res){
 
 //GET ALL ACTIVE USERS FOR PATHWAYS
 app.get("/users", function(req, res){
-     var query = "select * from LMS.dbo.Users where OrgID = 100";
+     var query = "select * from sysuser where account = 'admin'";
      console.log(query);
      executeQuery(query, res);
 });

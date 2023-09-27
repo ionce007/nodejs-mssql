@@ -1,5 +1,5 @@
 {
-  "name": "testapi",
+  "name": "dataapi",
   "version": "1.0.0",
   "description": "Testing node, express, SQL api.",
   "main": "server.js",
@@ -12,6 +12,6 @@
     "start": "node --max-old-space-size=8192 server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pam",
+  "author": "ionce",
   "license": "ISC"
 }
